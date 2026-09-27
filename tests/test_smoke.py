@@ -1,5 +1,5 @@
-import __PACKAGE__
+import project_template
 
 
 def test_package_imports():
-    assert __PACKAGE__.__version__
+    assert project_template.__version__
