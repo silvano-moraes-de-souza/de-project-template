@@ -25,6 +25,8 @@ TEXT_SUFFIXES = {".py", ".toml", ".md", ".yml", ".yaml", ".txt", ".cfg", ".examp
 GIT_NAME = "Silvano Moraes de Souza"
 GIT_EMAIL = "134219085+silvano-moraes-de-souza@users.noreply.github.com"
 
+TEMPLATE_ONLY = re.compile(r"<!-- template-only:start -->.*?<!-- template-only:end -->\n\n", re.S)
+
 OLD_SLUG = "de-project-template"
 OLD_PACKAGE = "project_template"
 OLD_TITLE = "Project Template"
@@ -63,7 +65,7 @@ def create(dest: Path, day: int, title: str, tagline: str, stack: list[str]) -> 
         if not path.is_file() or path.suffix not in TEXT_SUFFIXES or ".git" in path.parts:
             continue
         text = path.read_text(encoding="utf-8")
-        new = text
+        new = TEMPLATE_ONLY.sub("", text)
         for old, value in replacements:
             new = new.replace(old, value)
         if new != text:
