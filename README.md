@@ -11,6 +11,32 @@
 
 > Starter layout for the 30 Days of Data & Software Engineering series
 
+<!-- template-only:start -->
+## Using this template
+
+Every project in the series starts from here. One command creates the repo with the package renamed, the README filled, the banner rendered and the first commit made:
+
+```bash
+uv run python scripts/new_project.py ../ecommerce-data-pipeline \
+  --day 1 --title "E-commerce Data Pipeline" \
+  --tagline "Batch ETL from raw orders to a PostgreSQL star schema" \
+  --stack Python PostgreSQL Docker
+```
+
+What comes with it:
+
+| Piece | Where |
+|---|---|
+| Benchmark harness (wall time, peak RSS, machine info, git sha) | `bench/harness.py` |
+| Chart renderer for benchmark JSON | `bench/plot.py` |
+| Banner generator (plain SVG, renders on GitHub) | `scripts/banner.py` |
+| CI: ruff + pytest on Python 3.11 to 3.13, Docker build | `.github/workflows/ci.yml` |
+| Dependabot, issue and PR templates | `.github/` |
+| Docker image with uv, non-root user | `Dockerfile` |
+
+This section is removed from generated projects.
+<!-- template-only:end -->
+
 <!-- One or two sentences: who has the problem, what breaks without this. -->
 
 ## Problem
