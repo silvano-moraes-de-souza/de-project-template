@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="../../actions/workflows/ci.yml"><img src="../../actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/silvano-moraes-de-souza/de-project-template/actions/workflows/ci.yml"><img src="https://github.com/silvano-moraes-de-souza/de-project-template/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/python-3.11%2B-2a78d6" alt="Python 3.11+">
   <img src="https://img.shields.io/badge/license-MIT-52514e" alt="MIT">
   <a href="https://github.com/silvano-moraes-de-souza/30-days-data-eng"><img src="https://img.shields.io/badge/30%20days-day%20XX-0b0b0b" alt="30 Days of Data & Software Engineering"></a>
