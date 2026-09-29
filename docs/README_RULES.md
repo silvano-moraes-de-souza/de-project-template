@@ -28,6 +28,8 @@ Every repository in this profile ships a README that a tech lead can judge in 30
 - Screenshots of a UI filled with invented data presented as real. Demo data is labeled as demo.
 - Secrets, phone numbers, real customer names or internal URLs.
 - A banner or chart that only exists locally: commit the file the README points to.
+- Traces of AI tooling: `Co-Authored-By` or "Generated with" lines in commits, agent config files (`CLAUDE.md`, `AGENTS.md`, `.claude/`, `.cursor/`), agent memory folders or generated reports.
+- Em or en dashes, filler words (seamless, robust, leverage, comprehensive, crucial, utilize...) and decorative emoji in text, logs or commit messages. Write the way an engineer talks.
 
 ## Checklist before pushing
 
