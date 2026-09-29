@@ -34,6 +34,10 @@ What comes with it:
 | Dependabot, issue and PR templates | `.github/` |
 | Docker image with uv, non-root user | `Dockerfile` |
 
+What `bench/plot.py` produces from a benchmark JSON (here, from shopflow-datagen):
+
+![Example chart from bench/plot.py](https://raw.githubusercontent.com/silvano-moraes-de-souza/shopflow-datagen/main/docs/assets/throughput_by_scale_rows_per_s.png)
+
 This section is removed from generated projects.
 <!-- template-only:end -->
 
