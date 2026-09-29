@@ -74,9 +74,11 @@ def create(dest: Path, day: int, title: str, tagline: str, stack: list[str]) -> 
     _run(
         [
             sys.executable,
-            "scripts/banner.py",
-            "--day",
-            str(day),
+            "scripts/animated_banner.py",
+            "--kicker",
+            f"30 DAYS · DAY {day:02d}",
+            "--scene",
+            "flow",
             "--title",
             title,
             "--tagline",

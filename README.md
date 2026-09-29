@@ -29,7 +29,8 @@ What comes with it:
 |---|---|
 | Benchmark harness (wall time, peak RSS, machine info, git sha) | `bench/harness.py` |
 | Chart renderer for benchmark JSON | `bench/plot.py` |
-| Banner generator (plain SVG, renders on GitHub) | `scripts/banner.py` |
+| Animated banner (SVG + CSS, no JavaScript, renders on GitHub); swap `--scene` for one that shows the project | `scripts/animated_banner.py` |
+| README rules every project must meet | [`docs/README_RULES.md`](docs/README_RULES.md) |
 | CI: ruff + pytest on Python 3.11 to 3.13, Docker build | `.github/workflows/ci.yml` |
 | Dependabot, issue and PR templates | `.github/` |
 | Docker image with uv, non-root user | `Dockerfile` |
