@@ -20,7 +20,16 @@ import sys
 from pathlib import Path
 
 TEMPLATE = Path(__file__).resolve().parent.parent
-SKIP = {".git", ".venv", ".pytest_cache", ".ruff_cache", "__pycache__", "uv.lock", ".coverage"}
+SKIP = {
+    ".git",
+    ".venv",
+    ".pytest_cache",
+    ".ruff_cache",
+    "__pycache__",
+    "uv.lock",
+    ".coverage",
+    "README_RULES.md",
+}  # template-only docs stay here
 TEXT_SUFFIXES = {".py", ".toml", ".md", ".yml", ".yaml", ".txt", ".cfg", ".example", ""}
 GIT_NAME = "Silvano Moraes de Souza"
 GIT_EMAIL = "134219085+silvano-moraes-de-souza@users.noreply.github.com"
